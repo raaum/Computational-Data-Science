@@ -1,0 +1,258 @@
+IPython provides a rich architecture for interactive computing with:
+
+- A powerful interactive shell.
+- A kernel for Jupyter.
+- Support for interactive data visualization and use of GUI toolkits.
+- Flexible, embeddable interpreters to load into your own projects.
+- Easy to use, high performance tools for parallel computing.
+
+IPython is open sourced (BSD license), and is used by a range of projects, from basic programming to scientific computing and interactive data science, to advanced statistics, to quantum mechanics, with support for over 40 programming languages.
+
+IPython offers a foundation of interactive computing environments where scientific computing, data science, and analytics can be performed using a wide range of programming languages.
+
+IPython supports Python 2.7 and 3.3 or newer.
+
+IPython Books
+
+Cyrille Rossant has published both a beginner-level and advanced-level guide to IPython for data science.
+
+IPython Interactive Computing and Visualization Cookbook
+This is an advanced-level guide to IPython for data science, and the sequel of the IPython minibook.
+http://ipython-books.github.io/cookbook/
+
+Learning IPython for Interactive Computing and Data Visualization
+This is a beginner-level introduction to IPython for data analysis and numerical computing, covering NumPy, pandas, SciPy, and matplotlib.
+http://ipython-books.github.io/minibook/
+
+IPython and Project Jupyter
+
+With the release of 4.0 in August, 2015, there are now separate packages for each IPython component - nbformat for the notebook format, nbconvert for the notebook conversion machinery, Notebook for the HTML notebook application, etc.  IPython 3, the old last major monolithic release of IPython, bundled all of the language-agnostic code, such as the Notebook, which has moved under the new name Jupyter. 
+
+Jupyter Notebook
+
+The Jupyter Notebook is a web application that allows you to create and share documents that contain live code, equations, visualizations and explanatory text. Uses include: data cleaning and transformation, numerical simulation, statistical modeling, machine learning and much more.
+
+The Jupyter Notebook is based on a set of open standards for interactive computing. Think HTML and CSS for interactive computing on the web. These open standards can be leveraged by third party developers to build customized applications with embedded interactive computing.
+
+Using the Jupyter Notebook, you can author engaging documents that combine live-code with narrative text, equations, images, video, and visualizations. By encoding a complete and reproducible record of a computation, the documents can be shared with others on GitHub, Dropbox, and the Jupyter Notebook Viewer.
+
+The Notebook Document Format
+Jupyter Notebooks are an open document format based on JSON. They contain a complete record of the user's sessions and embed code, narrative text, equations and rich output.
+
+Interactive Computing Protocol
+The Notebook communicates with computational Kernels using the Interactive Computing Protocol, an open network protocol based on JSON data over ZMQ and WebSockets.
+
+The Kernel
+Kernels are processes that run interactive code in a particular programming language and return output to the user. Kernels also respond to tab completion and introspection requests.
+
+Features/Benefits
+
+Programming Language Support
+Jupyter Notebook has support for over 40 programming languages, including those popular in Data Science such as Python, R, Julia and Scala.
+
+Public/Private Sharing
+Notebooks can be shared with others using email, Dropbox, GitHub and the Jupyter Notebook Viewer.
+
+Rich Output
+Code can produce rich output such as images, videos, LaTeX, and JavaScript.
+
+Visualizations and Manipulations
+Interactive widgets can be used to manipulate and visualize data in realtime.
+
+Big Data Integration
+Leverage big data tools, such as Apache Spark, from Python, R and Scala.
+
+Data Analysis and Exploration
+Explore that same data with pandas, scikit-learn, ggplot2, dplyr, etc.
+
+Developer Documentation covers how to help with the development of Jupyter as well as technical details helpful for development.
+
+Documentation: http://jupyter.readthedocs.org/en/latest/#developer-documentation
+
+Repo: https://github.com/jupyter/notebook
+
+Jupyter Console
+Terminal based console for interactive computing.
+Docs: https://jupyter-console.readthedocs.org/en/latest/
+Rep: https://github.com/jupyter/jupyter_console
+
+Jupyter QtConsole
+Qt application for interactive computing with rich output.
+Docs: http://jupyter.org/qtconsole/stable/
+Repo: https://github.com/jupyter/qtconsole
+
+
+Jupyter Notebook Documents
+
+Notebook documents (or “notebooks”, all lower case) are documents produced by the Jupyter Notebook App which contain both computer code (e.g. python) and rich text elements (paragraph, equations, figures, links, etc...). Notebook documents are both human-readable documents containing the analysis description and the results (figures, tables, etc..) as well as executable documents which can be run to perform data analysis.
+
+Formatting and conversion
+
+Notebook Documents combine live code, narrative text (using markdown), visualizations, and other rich media. The following utility subprojects allow programmatic format conversion and manipulation of notebook documents.
+
+nbconvert
+Convert dynamic notebooks to static formats such as HTML, Markdown, LaTeX/PDF, and reStrucuredText.
+Documentation: http://nbconvert.readthedocs.org/en/latest/
+Repo: https://github.com/jupyter/nbconvert
+
+nbformat
+Work with notebook documents programmatically.
+Documentation: https://nbformat.readthedocs.org/en/latest/
+Repo: https://github.com/jupyter/nbformat
+
+Jupyter Notebook App
+
+The Jupyter Notebook App is a server-client application that allows editing and running notebook documents via a web browser. The Jupyter Notebook App can be executed on a local desktop requiring no internet access (as described in this document) or installed on a remote server and accessed through the internet.
+
+In addition to displaying/editing/running notebook documents, the Jupyter Notebook App has a “Dashboard” (Notebook Dashboard), a “control panel” showing local files and allowing to open notebook documents or shutting down their kernels.
+
+Jupyter Kernels and Notebook Kernels
+
+Kernels are programming language specific processes that run independently and interact with the Jupyter Applications and their user interfaces. IPython is the reference Jupyter kernel, providing a powerful environment for interactive computing in Python.
+
+A notebook kernel is a “computational engine” that executes the code contained in a Notebook document. The ipython kernel, referenced in this guide, executes python code. Kernels for many other languages exists (official kernels).
+
+When opening a Notebook document, the associated kernel is automatically launched. When the notebook is executed (either cell-by-cell or with menu Cell -> Run All), the kernel performs the computation and produces the results. Depending on the type of computations, the kernel may consume significant CPU and RAM. Note that the RAM is not released until the kernel is shut-down.
+
+Jupyter for Data Science
+
+The following kernels and other projects that are central to the usage of Jupyter in data science.
+
+IPython
+The reference Jupyter kernel, providing a powerful environment for interactive computing in Python.
+Documentation: https://ipython.org/documentation.html
+Repo: https://github.com/ipython/ipykernel
+
+ipywidgets
+interactive widgets for Python in the Jupyter Notebook.
+Documentation: https://github.com/ipython/ipywidgets
+Repo: https://github.com/ipython/ipywidgets
+
+ipyparallel
+lightweight parallel computing in Python offering seamless notebook integration. Documentation: https://ipyparallel.readthedocs.org/en/latest/
+Repo: https://github.com/ipython/ipyparallel
+
+
+IRkernel: https://github.com/IRkernel/IRkernel
+IRdisplay: https://github.com/IRkernel/IRdisplay
+repr: https://github.com/IRkernel/repr
+IJulia Kernel: https://github.com/JuliaLang/IJulia.jl
+Interactive Widgets: https://github.com/JuliaLang/Interact.jl
+Bash: https://github.com/takluyver/bash_kernel
+
+Jupyter Notebook Dashboard
+
+The Notebook Dashboard is the component which is shown first when the launching Jupyter Notebook App. The Notebook Dashboard is mainly used to open notebook documents, and to manage the running kernels (visualize and shutdown).
+
+The Notebook Dashboard has other features similar to a file manager, namely navigating folders and renaming/deleting files.
+
+
+How to Install Jupyter Notebook
+
+While the Jupyter Notebook allows users to run code in many different programming languages, the Jupyter Notebook itself is implemented in Python. To install Jupyter Notebook, you will also need Python installed on your system.
+
+http://jupyter.readthedocs.org/en/latest/running.html
+
+Jupyter requires Python 2.7 or ≥ 3.3.
+
+Anaconda for Python
+
+Anaconda includes and conveniently installs Python, the Jupyter Notebook, and other commonly used packages for scientific computing and data science.
+
+After you have Anaconda installed, you should make sure that Jupyter is up to date. Run the following command in the Terminal (Mac/Linux) or Command Prompt (Windows):
+
+conda update jupyter
+
+Alternatively, you may also use the Anaconda Launcher application to update to the latest version.
+
+Anaconda
+https://www.continuum.io/downloads
+
+Anaconda is a completely free Python distribution (including for commercial use and redistribution). It includes more than 300 of the most popular Python packages for science, math, engineering, and data analysis.
+
+If you don't have time or disk space for the entire distribution, try Miniconda. which contains only conda and Python. Then install just the individual packages you want through the conda command.
+
+Miniconda
+http://conda.pydata.org/miniconda.html
+
+If you are an existing Python user but new to Jupyter...
+
+As an existing Python user, you may have installed Python from the Python website, a system package manager, or using Anaconda. The command for installing Jupyter Notebook is slightly different depending on how you installed Python. Depending on whether or not you use Anaconda, follow one of these two instructions to install Jupyter on your system.
+
+If you use Python with Anaconda...
+
+If you have Anaconda installed but have not yet installed or used Jupyter, you should run the following command in the Terminal (Mac/Linux) or Command Prompt (Windows) to install Jupyter:
+
+conda install jupyter
+
+Now, you may consider installing kernels and next steps.
+
+If you use Python but do not use Anaconda...
+
+If you already have Python installed and are not using conda or Anaconda, you may install the Jupyter Notebook using Python’s package manager pip:
+
+pip3 install jupyter
+
+Some of Jupyter’s dependencies may require compilation, in which case you would need the ability to compile Python C-extensions. This means a C compiler and the Python headers.
+
+On Debian-based systems (e.g. Ubuntu), you can get this with:
+
+apt-get install build-essential python3-dev
+
+And on Fedora-based systems (e.g. Red Hat, CentOS):
+
+yum groupinstall 'Development Tools'
+yum install python3-devel
+
+Existing IPython Notebook users upgrading to Jupyter Notebook...
+
+The Jupyter Notebook used to be called the IPython Notebook. If you are running an older version of the IPython Notebook (version 3 or earlier) you can use the following to upgrade to the latest version of the Jupyter Notebook.
+
+If the older version of the IPython Notebook was installed using pip, upgrade using:
+
+pip install -U jupyter
+
+If the older version of the IPython Notebook was installed using conda or Anaconda, upgrade using:
+
+conda install jupyter
+
+The Migrating from IPython document gives additional information about migrating from IPython 3 to Jupyter.
+
+Installing kernels
+
+Installing the Jupyter Notebook as described above will also install the IPython kernel which allows working on notebooks using the Python programming language.  To run notebooks in languages other than Python, you will need to install additional kernels.
+
+Running the Notebook
+
+After you have installed the Jupyter Notebook on your computer, you are ready to run the Notebook.
+
+To do this, run the following command in the Terminal (Mac/Linux) or Command Prompt (Windows):
+
+jupyter notebook
+
+This should result in the Notebok web application opening in your default web browser
+
+Deployment
+
+To serve a variety of users and use cases, these subprojects are being developed to support notebook deployment in various contexts, including multiuser capabilities and secure, scalable cloud deployments.
+
+jupyterhub
+Multi-user notebook for organizations with plugglable authentication and scalability.
+
+jupyter-drive
+Store notebooks on Google Drive.
+
+nbviewer
+Share notebooks as static HTML on the web.
+
+tmpnb
+Create temporary, transient notebooks in the cloud.
+
+tmpnb-deploy
+Deployment tools for tmpnb.
+
+dockerspawner
+Deploy notebooks for ‘jupyterhub’ inside Docker containers.
+
+docker-stacks
+Stacks of Jupyter applications and kernels as Docker containers.
